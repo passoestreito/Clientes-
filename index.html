@@ -2,136 +2,148 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Portfólio Vinícius</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio de Vinícius</title>
 </head>
 
 <body>
-  <header class="container text-center">
-    <img src="meu_avatar.png" alt="Avatar de Vinícius" class="rounded-circle" width="150" height="150">
-    <p class="lead">Olá, eu sou o Vinícius</p>
-    <h1>Estudante de Programação e Desenvolvimento Web</h1>
-    <p>Sou aluno do 3º ano do Ensino Médio em uma escola pública e venho estudando programação através da plataforma Alura e outras fontes online. Meu foco principal é o desenvolvimento web com HTML, CSS e JavaScript. Estou sempre buscando criar projetos desafiadores que testem meus conhecimentos e habilidades.</p>
-    <p>Minhas principais habilidades:</p>
-    <div>
-      <p class="badge bg-secondary">HTML5</p>
-      <p class="badge bg-secondary">CSS3</p>
-      <p class="badge bg-secondary">JavaScript</p>
-      <p class="badge bg-secondary">Bootstrap</p>
-      <p class="badge bg-secondary">p5.js</p>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png.png" alt="avatar do Vinícius" class="rounded-circle" width="150" height="150">
+        <p class="lead">Olá! Eu sou o Vinícius</p>
+        <h1>Explorador de códigos e ideias criativas</h1>
+        <p>Atualmente curso o terceiro ano do ensino médio e mergulho todos os dias no universo da programação por meio da plataforma Alura. 
+            Tenho paixão por transformar ideias em projetos funcionais e divertidos. Já criei aplicações com HTML, p5.js, JavaScript e até usando Scratch. 
+            Cada projeto é uma nova jornada criativa e uma chance de aprender mais sobre lógica, design e interatividade.</p>
+        <p>Minhas principais habilidades:</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">P5.js</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Projetos em destaque</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Tetris.jpg" class="card-img-top" alt="Imagem do projeto Planeta das Cores">
+                    <div class="card-body">
+                        <h5 class="card-title">Planeta das Cores</h5>
+                        <p class="card-text">Uma aventura interativa feita com p5.js onde o usuário viaja por planetas e muda as cores do universo em tempo real.
+                            Cada planeta representa uma emoção diferente, com trilhas sonoras e efeitos visuais únicos.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/download.jpg" class="card-img-top" alt="Imagem do projeto EcoClick">
+                    <div class="card-body">
+                        <h5 class="card-title">EcoClick: Um jogo de reciclagem</h5>
+                        <p class="card-text">Neste jogo educativo, desenvolvido em JavaScript, o objetivo é arrastar o lixo para a lixeira correta.
+                            A cada acerto, o jogador aprende algo novo sobre reciclagem e sustentabilidade. Ideal para crianças e escolas.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/images.jpg" class="card-img-top" alt="Imagem do projeto Rítmico">
+                    <div class="card-body">
+                        <h5 class="card-title">Rítmico: jogo de música e memória</h5>
+                        <p class="card-text">Criado com Scratch, Rítmico é um desafio onde você precisa repetir as sequências de notas musicais corretamente. 
+                            À medida que avança, novas melodias são adicionadas, estimulando a memória auditiva e o ritmo.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Planeta das Cores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Uma experiência imersiva feita com p5.js, onde os usuários exploram galáxias e transformam o cenário ao clicar em diferentes elementos coloridos.
+                        A proposta é desenvolver a criatividade visual com uma navegação simples e divertida.</p>
+                    <img src="img/Tetris.jpg" class="img-fluid w-100" alt="Imagem do Planeta das Cores">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                    <a href="#">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <main class="container mt-5">
-    <h2>Projetos em Destaque</h2>
-    <div class="row">
-      <!-- Projeto 1: Portfólio Pessoal -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img_portfolio.png" class="card-img-top" alt="Imagem de um portfólio pessoal">
-          <div class="card-body">
-            <h5 class="card-title">Portfólio Pessoal Responsivo</h5>
-            <p class="card-text">Este projeto é o meu próprio portfólio online, desenvolvido com HTML, CSS e Bootstrap. Ele é totalmente responsivo, ou seja, funciona bem em qualquer dispositivo. Inclui uma galeria de projetos, um formulário de contato e uso de ícones com Bootstrap Icons.</p>
-            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
-          </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">EcoClick: Um jogo de reciclagem</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>EcoClick é um jogo divertido que ensina sobre reciclagem. O jogador deve arrastar itens como papel, vidro e plástico até suas lixeiras correspondentes.
+                        O projeto foi desenvolvido com HTML, CSS e JavaScript puros, sem bibliotecas externas.</p>
+                    <img src="img/download.jpg" class="img-fluid w-100" alt="Imagem do EcoClick">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                    <a href="#">Ver código do projeto</a>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Projeto 2: Quiz Interativo -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img_quiz.png" class="card-img-top" alt="Imagem de um quiz interativo">
-          <div class="card-body">
-            <h5 class="card-title">Quiz Interativo de Conhecimentos Gerais</h5>
-            <p class="card-text">Um jogo de perguntas e respostas feito com JavaScript, onde o usuário testa seus conhecimentos e recebe uma pontuação no final. Aprendi bastante sobre manipulação de arrays, eventos e lógica condicional durante esse projeto.</p>
-            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projeto 3: Relógio Digital -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img_relogio.png" class="card-img-top" alt="Imagem de um relógio digital">
-          <div class="card-body">
-            <h5 class="card-title">Relógio Digital com Dark Mode</h5>
-            <p class="card-text">Este projeto é um relógio digital em tempo real com opção de alternar entre modo claro e escuro. Foi uma ótima oportunidade para explorar manipulação de tempo com JavaScript e uso de temas dinâmicos com CSS.</p>
-            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </main>
 
-  <!-- Modais dos Projetos -->
-  <div class="modal" id="modal1" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Portfólio Pessoal Responsivo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rítmico: Jogo de música e memória</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Desenvolvido no Scratch, o Rítmico é um jogo onde os jogadores precisam memorizar e repetir sequências musicais. Cada rodada apresenta sons
+                        diferentes que se acumulam, criando uma melodia cada vez mais desafiadora.</p>
+                    <img src="img/images.jpg" alt="Imagem do Rítmico" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>Este portfólio foi criado com o objetivo de organizar e apresentar meus projetos de forma profissional. Trabalhei com layout responsivo, navegação por âncoras e organização visual.</p>
-          <img src="img_portfolio.png" class="img-fluid w-100" alt="Imagem do portfólio">
-        </div>
-        <div class="modal-footer">
-          <a href="https://editor.p5js.org/seu_usuario/sketches/seu_portfolio">Ver projeto ao vivo</a>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="modal" id="modal2" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Quiz Interativo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+    <footer class="container py-5">
+        <h2>Fale comigo</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/passoestreito">GitHub</a>
         </div>
-        <div class="modal-body">
-          <p>O quiz apresenta questões com alternativas, mostra respostas corretas e calcula a pontuação final. Utilizei JavaScript para controlar a navegação entre perguntas, validação de respostas e resultado dinâmico.</p>
-          <img src="img_quiz.png" class="img-fluid w-100" alt="Imagem do quiz">
-        </div>
-        <div class="modal-footer">
-          <a href="https://editor.p5js.org/seu_usuario/sketches/quiz_interativo">Ver projeto ao vivo</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        <p class="my-5 text-center">© 2025. Criado por Vinícius</p>
+    </footer>
 
-  <div class="modal" id="modal3" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Relógio Digital</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <p>O relógio atualiza automaticamente e tem um botão para alternar entre o modo claro e escuro. Isso me ajudou a compreender melhor como aplicar temas CSS com classes dinâmicas e utilizar objetos de data/hora no JavaScript.</p>
-          <img src="img_relogio.png" alt="Relógio digital" class="img-fluid w-100">
-        </div>
-        <div class="modal-footer">
-          <a href="https://editor.p5js.org/seu_usuario/sketches/relogio_digital">Ver projeto ao vivo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="container py-5">
-    <h2>Entre em contato comigo</h2>
-    <div>
-      <i class="bi bi-github"></i>
-      <a href="https://github.com/seu_usuario">Meu GitHub</a>
-    </div>
-    <p class="my-5 text-center">© 2025 Desenvolvido por Vinícius</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
